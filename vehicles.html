@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>EasyCar Rental</title>
+        <link href="css/custom-theme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+        <script src="js/jquery-1.8.3.js"></script>
+        <script src="js/jquery-ui-1.9.2.custom.js"></script>
+        <style type="text/css">
+        @import url(style.css);
+        </style>
+        <link href="slider/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="slider/js-image-slider.js" type="text/javascript"></script>
+   <script src="js/gen_validatorv4.js" type="text/javascript" ></script>
+    </head>
+
+    <body>
+		<form action="demo_form.asp" method="get">
+        <div id="wrapper">
+            <div id="topbar" class="ui-corner-all">
+    	Phone No: 0430218238 | Email: <a href="service@easycar.com">service@easycar.com</a>
+            </div>
+            <div id="header" class="ui-corner-all">
+              <div id="logo"> <img src="Images/logo_desing.jpg" alt="logo" width="120" height="80" /> <strong>EasyCar Rental</strong> </div>
+              <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                    <li><span><a href="vehicles.html">Vehicles</a></span></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="help.html">Help/FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul> 
+            </div>
+            <div id="body">
+                 <div id="leftmenu" class="ui-corner-all">
+                    <div class="form"></br>
+                        <h3 style="color:white">LogIn</h3>
+                        <label for="LogIn_name">Username:</label>
+                        <input type="text" name="Name" id="LogIn_name" value="Username" class="ui-corner-all"/>
+                        <label for="Password">Password:</label>
+                        <input type="text" name="Password" id="LogIn_password" value="Password" class="ui-corner-all"/>
+					</div>
+					<div>	
+                        <form id="form1" name="form1" method="post" action="">&nbsp;&nbsp;
+                        <input type="submit" name="button" id="button" value="Login" style="width: 75px;" />&nbsp;&nbsp;
+						<INPUT TYPE="BUTTON" VALUE="Register" style="width: 75px;" ONCLICK="window.location.href='Registration.html'">
+						<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not registered?
+                    </div>
+                    <br clear="all" />
+
+                    <div class="seperator"></div>
+
+                    <div class="form">
+                        <h3 style="color:white">Search Vehicles</h3>
+                        Use this form to search a suitable vehicles for you in terms of the vehicle type, location, and available date. 
+                        <br /><br />
+                        <form>
+                            location:<br>
+                            <select name = "location" class="ui-corner-all">
+                                <option value="caulfield" selected="selected">Caulfield
+                                <option value="malvern">Malvern
+                                <option value="glen huntly">Glen
+                                    Huntly
+                                <option value="inner city">Inner
+                                    City                                   
+                            </select> <br>
+                            Vehicle Type:<br>
+                            <select name= "vehicle" class="ui-corner-all">
+                                <option value="truck">Truck
+                                <option value="Van">Van
+                                <option value="Sedan" selected="selected">Sedan
+                                <option value="SUV">SUV
+                                <option value="Wagon">Wagon                                   
+                            </select><br>
+                            <br/>
+                            <label for="form_name">Proposed Pick Up Date</label>
+                            <input type="text" id="Pick_date" style="width: 150px;" class="ui-corner-all" />
+                            <label for="form_name">Proposed Drop Off Date</label>
+                            <input type="text" id="Drop_date" style="width: 150px;" class="ui-corner-all" />
+
+
+                            <label for="form_comments">Additional Requirements</label>
+                            <textarea id="form_comments" rows="4" cols="22" class="ui-corner-all">I would like to request your services</textarea>
+
+                            <button value="Search" class="send_button" onclick="this.form.submit();">SEARCH</button>
+                        </form>
+                        <br clear="all" />
+                    </div>
+                </div>    
+				<div id="content">
+<div id="sliderFrame">
+        <div id="ribbon"></div>
+        <div id="slider">
+          
+                <img src="Images/slider.png" alt="Welcome to EasyCar Rental" />
+            <img src="Images/slider1.png" alt="We provide Local and inter-state car rental service " />
+            <img src="Images/slider2.png" alt="We provide easy service " />
+            <img src="Images/slider3.png" alt="Join us now" />
+            <img src="Images/slider4.png" alt="Call us on 0430218238"/>
+        </div>
+								<h2><font size="4">Most Popular Vehicles</font></h2>
+								 <br></br>
+								 
+								 
+								 
+								 <table width="693" TABLE BORDER="1" CELLSPACING="7" class="ui-corner-all" style="background-color:#F8F8F8" bordercolor="#0772a1">
+									
+									<tr>
+										
+										<td  COLSPAN="2" align="center" class="ui-corner-all"><h2><font size="4">Small & Eco-Frindly</font></h2></td>
+									</tr>	
+									<tr>
+										<td  width="178" class="ui-corner-all"><img src="images/small_car1.jpg" width="180" height="105"></td>
+										<td  width="" valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>Vokswagen GT Up!</h1></div><p>with the power to 75 hp. However, in fact this little car can still be given an injection of more,  Its weight will not be more than 900 pounds, so still fun on the freeway.  </p></td>
+								    	
+									</tr>
+								    <tr>
+										<td class="ui-corner-all"><img src="images/small_car2.jpg" width="180" height="119"></td>
+										<td  valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>Fiat-500_coupe</h1></div><p>Fiat used the Pop Yellow coupe to showcase its second Twin Air unit — same 875cc capacity, but 103bhp not 85bhp. Other good stuff includes CO1 of 95g/km and 114lb ft of torque. </p></td>
+									</tr>	
+									<tr>
+										<td class="ui-corner-all"><img src="images/small_car3.jpg" width="180" height="119"></td>
+										<td valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>Chevrolet Spark</h1></div><p>One of the more practical vehicles on display, the Chevy Spark is small, compact, and quite stylish. The vehicle has a fuel economy of 5L/100km (around 47 miles per gallon).</p></td>
+										
+								</tr>
+							</table>
+							<br></br>
+								
+								 <table width="693" TABLE BORDER="1" CELLSPACING="7" class="ui-corner-all" style="background-color:#F8F8F8" bordercolor="#0772a1">
+									
+									<tr>
+										
+										<td  COLSPAN="2" align="center" class="ui-corner-all"><h2><font size="4">Medium & Large</font></h2></td>
+									</tr>	
+									<tr>
+										<td  width="178" class="ui-corner-all"><img src="images/medium_car1.jpg" width="180" height="105"></td>
+										<td  width="" valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>For Mondeo</h1></div><p> 2013 Ford Mondeo uses the 1.6-liter diesel. Also comes with a hybrid engine using a 2.0 liter gasoline engine, electric motor combined lithium-ion batteries</p></td>
+								    	
+									</tr>
+									<tr>
+										<td class="ui-corner-all"><img src="images/medium_car2.jpg" width="180" height="105"></td>
+										<td valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>Ford Falcon FG</h1></div><p> The new styling is based around the kinetic design Ford Europe uses for their cars. The interior has been improved from the previous model. </p></td>
+								    	
+									</tr>
+									<tr>
+										<td class="ui-corner-all"><img src="images/medium_car3.jpg" width="180" height="105"></td>
+										<td valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>Mitsubishi Lancer Aspires</h1></div><p> Its 2.4-litre Lancer to attract buyers looking to downsize their medium or large cars, 2.4-litre four-cylinder engine with performance more in keeping with mid-sized vehicles. </p></td>
+								    	
+									</tr>
+									<tr>
+										<td class="ui-corner-all"><img src="images/medium_car4.jpg" width="180" height="105"></td>
+										<td valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>BMW M3!</h1></div><p> Luxury series consists of two door Convertible, two door Coupe, four door Sedan and four door Sport Wagon body styles in your choice </p></td>
+								    	
+									</tr>
+							</table>
+								<br></br>
+							 <table width="693" TABLE BORDER="1" CELLSPACING="7" class="ui-corner-all" style="background-color:#F8F8F8" bordercolor="#0772a1">
+									
+									<tr>
+										
+										<td COLSPAN="2"align="center" class="ui-corner-all"><h2><font size="4">Minivan & 4wd</font></h2></td>
+									</tr>	
+									<tr>
+										<td  width="178" class="ui-corner-all"><img src="images/minivan_car1.jpg" width="180" height="105"></td>
+										<td  width="" valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>Mazda Premacy</h1></div><p> The Premacy is a reliable, well equipped and soft-riding MPV, The Premacy came as both a five- and a seven-seater, with the two rearmost seats removable in the latter. </p></td>
+								    	
+									</tr>
+								    <tr>
+										<td class="ui-corner-all"><img src="images/minivan_car2.jpg" width="180" height="115"></td>
+										<td  valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>2013 Toyota Sienna</h1></div><p> is a 4-door, up to 8-passenger mini van, available in 8 trims, ranging from the FWD 7-Passenger V6 to the Limited AWD 7-Passenger V6.  </p></td>
+									</tr>	
+									<tr>
+										<td class="ui-corner-all"><img src="images/minivan_car3.jpg" width="180" height="115"></td>
+										<td valign="top" class="ui-corner-all"><br><div style="text-indent:15px;"><h1>Kia Borrego</h1></div><p> The Borrego  come in both 3.8-litre V6 and 4.6-litre V8 DOHC forms, with a clean diesel the latter of which is capable of a 7,500 pound max payload, while the former resides with the 5,000 pound. </p></td>
+										
+								</tr>
+							</table>
+							<br></br>
+	
+	
+								</div>
+	
+								<div class="clear"></div>
+									<div id="footer" class="ui-corner-all">
+									<span><a href="index.html">Home</a></span> | 
+									<a href="vehicles.html">Vehicle</a> |
+									<a href="location.html">Location</a> |
+									<a href="help.html">Help/FAQs</a> |
+									<a href="contact.html">Contact</a>
+	
+	
+								    <p>	Copyright &copy; 2012 created by EasyCar Rental Owned by EasyCar Rental </p>
+	
+								</div>
+							</div>
+								<script>
+									 $(function() {
+									 $( "#Pick_date" ).datepicker();
+									 $( "#Drop_date" ).datepicker();
+									   });
+								</script>
+					</div>
+				
+			</body>
+</html>
+
+																								

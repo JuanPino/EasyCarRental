@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>EasyCar Rental</title>
+        <link href="css/custom-theme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+        <script src="js/jquery-1.8.3.js"></script>
+        <script src="js/jquery-ui-1.9.2.custom.js"></script>
+        <style type="text/css">
+        @import url(style.css);
+        </style>
+        <link href="slider/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="slider/js-image-slider.js" type="text/javascript"></script>
+   <script src="js/gen_validatorv4.js" type="text/javascript" ></script>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="topbar" class="ui-corner-all">
+    	Phone No: 0430218238 | Email: <a href="service@easycar.com">service@easycar.com</a>
+    </div>
+    <div id="header" class="ui-corner-all">
+      <div id="logo"> <img src="Images/logo_desing.jpg" alt="logo" width="120" height="80" /> <strong>EasyCar Rental</strong> </div>
+      <ul id="navigation">
+        <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="help.html">Help/FAQs</a></li>
+                    <li><span><a href="contact.html">Contact</a></span></li>
+                </ul> 
+    </div>
+    <div id="body">
+                <div id="leftmenu" class="ui-corner-all">
+                    <div class="form"></br>
+                         <form id="form1" name="form1" method="post" action="">&nbsp;&nbsp;
+                         <h3 style="color:white">LogIn</h3>
+                        <label for="LogIn_name">Username:</label>
+                        <input type="text" name="Login_Name" id="LogIn_name" value="Username" class="ui-corner-all"/>
+                        <label for="Password">Password:</label>
+                        <input type="text" name="Login_Password" id="LogIn_password" value="Password" class="ui-corner-all"/>
+					
+                       
+                        <input type="submit" name="button" id="button" value="Login" style="width: 75px;" />&nbsp;&nbsp;
+						<INPUT TYPE="BUTTON" VALUE="Register" style="width: 75px;" ONCLICK="window.location.href='Registration.html'">
+                        </form>
+                        <script type="text/javascript">
+                        frmvalidator.addValidation("Login_Name", "req","Please enter your User Name.");
+						frmvalidator.addValidation("Login_Name", "maxlen=20","Max length for Username is 20.");
+						frmvalidator.addValidation("Login_Password","maxlen=20","Max length for Username is 20.");
+                        </script>
+						<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not registered?
+                    </div>
+                    <br clear="all" />
+
+                    <div class="seperator"></div>
+
+                    <div class="form">
+                        <h3 style="color:white">Search Vehicles</h3>
+                        Use this form to search a suitable vehicles for you in terms of the vehicle type, location, and available date. 
+                        <br /><br />
+                       <form name="myForm" id="myForm" method="get" action="search.html">
+                            location:<br>
+                            <select name= "SearchLocation" class="ui-corner-all">
+                                <option value="caulfield" selected="selected">Caulfield
+                                <option value="malvern">Malvern
+                                <option value="glen huntly">Glen
+                                    Huntly
+                                <option value="inner city">Inner
+                                    City                                   
+                            </select> <br>
+                            Vehicle Type:<br>
+                            <select name= "SearchVehicle" class="ui-corner-all">
+                                <option value="truck">Truck
+                                <option value="Van">Van
+                                <option value="Sedan" selected="selected">Sedan
+                                <option value="SUV">SUV
+                                <option value="Wagon">Wagon                                   
+                            </select><br>
+                            <br/>
+                            <label for="form_name">Proposed Pick Up Date</label>
+                            <input type="text" id="Pick_date" style="width: 150px;" class="ui-corner-all" />
+                            <label for="form_name">Proposed Drop Off Date</label>
+                            <input type="text" id="Drop_date" style="width: 150px;" class="ui-corner-all" />
+
+
+                            <label for="form_comments">Additional Requirements</label>
+                            <textarea name="Formaea" id="form_comments" rows="4" cols="22" class="ui-corner-all">I would like to request your services</textarea>
+
+                            <button value="Search" class="send_button" onclick="this.form.submit();">SEARCH</button>
+                        </form>
+                        <script type="text/javascript">
+                          frmvalidator.addValidation("SearchVehicle","dontselect=Sedan","Please choose the Vehicle");
+						  frmvalidator.addValidation("SearchLocation","dontselect=caulfield","Please choose the location");
+						  frmvalidator.addValidation("Formaea","maxlen=100")
+                        </script>
+                        <br clear="all" />
+                    </div>
+                </div>    
+      <div id="content">
+<div id="sliderFrame">
+        <div id="ribbon"></div>
+        <div id="slider">
+          
+                <img src="Images/slider.png" alt="Welcome to EasyCar Rental" />
+            <img src="Images/slider1.png" alt="We provide Local and inter-state car rental service " />
+            <img src="Images/slider2.png" alt="We provide easy service " />
+            <img src="Images/slider3.png" alt="Join us now" />
+            <img src="Images/slider4.png" alt="Call us on 0430218238"/>
+        </div>
+
+
+      <h2><font size="5">Contact Information</font></h2>
+          <p> <font color="#000000" size="2">For assistance with last minute car hire bookings, modifications to reservations or questions about your rental, don't hesitate to contact our dedicated reservations team on: <br/><br/>
+		    Ph:  1300 13 13 90 <br/> Ph:  0800 800 115 <br/>Email: service@easycar.com <br/><br/>
+             For general enquiries. Please allow 24 hours for a response. Quotes not available from this email address. </font><br/>
+ 		</p>
+											
+								 
+       <h2><font size="4">Submit enquiries</font></h2><br></br>
+       <tr>
+            <td><h4 align="justify">Please Use This form to contact us </h4>
+			  
+			  <form name="form1" id="form1" method="post" action="">
+	    <table width="700" border="0" cellspacing="8px" cellpadding="2px" align="right" style="background-color:#f0f0f0" class="ui-corner-all">
+				  <tr>
+				  	<td width="218" ><font color="#000000" size="2">Title</font><font color="#FF0000">*</font>:</td>
+                  	<td width="351">
+				  	<select name="Title">
+                  	<option value="Mr">Mr</option>
+                  	<option value="Ms">Ms</option>
+                  	<option value="Miss">Miss</option>
+                  	</select>
+                  	</td>
+				  </tr>	
+                    <tr> 
+                      <td width="218"><font color="#000000" size="2">First Name</font><font color="#FF0000">*</font>:</td>
+                      <td width="351"><div align="left">
+                        <input type="text" name="first_name" size="25">
+                      
+					  </td>
+                    </tr>
+                    <tr>
+                      <td width="218"><font color="#000000" size="2">Last Name</font><font color="#FF0000">*</font>:</td>
+                      <td><div align="left">
+                        <input type="text" name="last_name" size="25">
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td width="218"><font color="#000000" size="2">Email Address</font><font color="#FF0000">*</font>:</td>
+                      <td>
+                        <input type="text" name="email" size="25">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="218"><font color="#000000" size="2">Phone Number</font><font color="#FF0000">*</font>:</td>
+                      <td>
+                        <input type="text" name="phone_number" size="25">
+                      </td>
+                    </tr>
+					<tr>
+					   <td width="218"><font color="#000000" size="2">Type of Enquires</font><font color="#FF0000">*</font>:</td>
+					   <td>
+					   <select name="RequstType">
+					   <option value="Qoutation">Asking for Qoutation</option>
+					   <option value="Invoice">Tax Invoice</option>
+					   <option value="Reservation">Reservation request</option>
+					   <option value="General">General enquiries</option>
+					   </select>
+					   </td>
+				    </tr>
+					 <tr>
+					   <td><font color="#000000" size="2">Prefer Type of Contact </font><font color="#FF0000">*</font>:</td>
+					   <td><input type="checkbox" name="ContactType" value="contact">Phone Call <input type="checkbox" name="ContactType" value="Text">Text <input type="checkbox" name="ContactType" value="Email">Email</td>
+					 </tr>
+					 <tr>
+					   <td><font color="#000000" size="2">Location</font><font color="#FF0000">*</font>:</td>
+					   <td><select name="RequstLocation">
+					   <option value="MelbourneCity">Melbourne Inner City</option>
+					   <option value="Caulfield">Caulfield</option>
+					   <option value="Malvern">Malvern</option>
+					   <option value="GlenHuntly">Glen Huntly </option>
+					   </select>
+					   </td>
+					 </tr>
+					 <tr>
+					   <td><font color="#000000" size="2">Message</font><font color="#FF0000">*</font>:</td>
+					   <td><textarea name="RequestMsg" cols="15" rows="8"></textarea></td>
+					 </tr>
+                    <tr>
+                      <td colspan="2"><div align="center">
+                        <input type="submit" name="Submit" value="Send" style="width: 55px;" />&nbsp;&nbsp;
+						<input type="reset" name="reset" value="Clear" style="width: 55px;" />
+                      </div></td>
+                    </tr>
+              </table>
+                </form>
+      
+	    
+      </div>
+        
+        <div class="clear"></div>
+		<br></br>
+		<br></br>
+		 <br></br>
+		 <br></br>
+		 <br></br>
+		 <br></br>
+		 <br></br>
+		 <br></br>
+		 <br></br>
+		
+		
+        <div id="footer" class="ui-corner-all">
+            <span><a href="index.html">Home</a></span> | 
+            <a href="vehicles.html">Vehicle</a> |
+            <a href="location.html">Location</a> | 
+            <a href="help.html">Help/FAQs</a> |
+            <a href="contact.html">Contact</a>
+            
+          
+		<p>	Copyright &copy; 2012 created by EasyCar Rental Owned by EasyCar Rental </p>
+	   
+	    </div>
+    </div>
+	<script>
+									 $(function() {
+									 $( "#Pick_date" ).datepicker();
+									 $( "#Drop_date" ).datepicker();
+									   });
+								</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>EasyCar Rental</title>
+        <link href="css/custom-theme/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+        <script src="js/jquery-1.8.3.js"></script>
+        <script src="js/jquery-ui-1.9.2.custom.js"></script>
+        <style type="text/css">
+        @import url(style.css);
+        </style>
+        <link href="slider/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="slider/js-image-slider.js" type="text/javascript"></script>
+   <script src="js/gen_validatorv4.js" type="text/javascript" ></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="topbar" class="ui-corner-all">
+    	Phone No: 0430218238 | Email: <a href="service@easycar.com">service@easycar.com</a>
+            </div>
+            <div id="header" class="ui-corner-all">
+              <div id="logo"> <img src="Images/logo_desing.jpg" alt="logo" width="120" height="80"> <strong>EasyCar Rental</strong> </div>
+              <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><span><a href="location.html">Location</a></span></li>
+                    <li><a href="help.html">Help/FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul> 
+            </div>
+            <div id="body">
+                <div id="leftmenu" class="ui-corner-all">
+                    <div class="form"></br>
+                        <form id="form1" name="form1" method="post" action="">&nbsp;&nbsp;
+                         <h3 style="color:white">LogIn</h3>
+                        <label for="LogIn_name">Username:</label>
+                        <input type="text" name="Login_Name" id="LogIn_name" value="Username" class="ui-corner-all"/>
+                        <label for="Password">Password:</label>
+                        <input type="text" name="Login_Password" id="LogIn_password" value="Password" class="ui-corner-all"/>
+					
+                       
+                        <input type="submit" name="button" id="button" value="Login" style="width: 75px;" />&nbsp;&nbsp;
+						<INPUT TYPE="BUTTON" VALUE="Register" style="width: 75px;" ONCLICK="window.location.href='Registration.html'">
+                        </form>
+                        <script type="text/javascript">
+                        frmvalidator.addValidation("Login_Name", "req","Please enter your User Name.");
+						frmvalidator.addValidation("Login_Name", "maxlen=20","Max length for Username is 20.");
+						frmvalidator.addValidation("Login_Password","maxlen=20","Max length for Username is 20.");
+                        </script>
+						<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not registered?
+                    </div>
+                    <br clear="all" />
+
+                    <div class="seperator"></div>
+
+                    <div class="form">
+                        <h3 style="color:white">Search Vehicles</h3>
+                        Use this form to search a suitable vehicles for you in terms of the vehicle type, location, and available date. 
+                        <br /><br />
+                        <form name="myForm" id="myForm" method="get" action="search.html">
+                            location:<br>
+                            <select name= "SearchLocation" class="ui-corner-all">
+                                <option value="caulfield" selected="selected">Caulfield
+                                <option value="malvern">Malvern
+                                <option value="glen huntly">Glen
+                                    Huntly
+                                <option value="inner city">Inner
+                                    City                                   
+                            </select> <br>
+                            Vehicle Type:<br>
+                            <select name= "SearchVehicle" class="ui-corner-all">
+                                <option value="truck">Truck
+                                <option value="Van">Van
+                                <option value="Sedan" selected="selected">Sedan
+                                <option value="SUV">SUV
+                                <option value="Wagon">Wagon                                   
+                            </select><br>
+                            <br/>
+                            <label for="form_name">Proposed Pick Up Date</label>
+                            <input type="text" id="Pick_date" style="width: 150px;" class="ui-corner-all" />
+                            <label for="form_name">Proposed Drop Off Date</label>
+                            <input type="text" id="Drop_date" style="width: 150px;" class="ui-corner-all" />
+
+
+                            <label for="form_comments">Additional Requirements</label>
+                            <textarea name="Formaea" id="form_comments" rows="4" cols="22" class="ui-corner-all">I would like to request your services</textarea>
+
+                            <button value="Search" class="send_button" onclick="this.form.submit();">SEARCH</button>
+                        </form>
+                        <script type="text/javascript">
+                          frmvalidator.addValidation("SearchVehicle","dontselect=Sedan","Please choose the Vehicle");
+						  frmvalidator.addValidation("SearchLocation","dontselect=caulfield","Please choose the location");
+						  frmvalidator.addValidation("Formaea","maxlen=100")
+                        </script>
+                        <br clear="all" />
+                    </div>
+                </div>
+                <div id="content">
+<div id="sliderFrame">
+        <div id="ribbon"></div>
+        <div id="slider">
+          
+                <img src="Images/slider.png" alt="Welcome to EasyCar Rental" />
+            <img src="Images/slider1.png" alt="We provide Local and inter-state car rental service " />
+            <img src="Images/slider2.png" alt="We provide easy service " />
+            <img src="Images/slider3.png" alt="Join us now" />
+            <img src="Images/slider4.png" alt="Call us on 0430218238"/>
+        </div>
+                    
+                    <h2>Branches in Melbourne</h2>
+					<br></br>
+                    <div id="accordion">
+                        <h3>EasyCar Rental(Inner City)</h3>
+                        <div>
+                            <p><font color="#000000" size="2"><strong>EasyCar Rental Southbank Branch</strong><br/>
+                                Adddress: 223 Southgate Ave, Melbourne, VIC 3006, Austrlia<br/>
+                                Contact Number: 0389463823<br/><br/>
+                                <strong>EasyCar Rental Dockland Branch</strong><br/>
+                                Address: 125-147 Wurundjeri Way Docklands VIC 3008, Australia<br/>
+                                Contact Numbe: 0387463782<br/><br/>
+                                <strong>EasyCar Rental Calton Branch</strong><br/>
+                                Address:  23 Rathdowne St Carlton VIC 3053, Australia<br/>
+                                Contact Numbe: 0387463322
+
+                                </font></p>
+                            <br/>
+                            <p align="center"> <iframe width="550" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=209903562358090182916.0004cf965858ccaff430c&amp;ie=UTF8&amp;t=m&amp;ll=-37.814802,144.959965&amp;spn=0.047464,0.094414&amp;z=13&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=209903562358090182916.0004cf965858ccaff430c&amp;ie=UTF8&amp;t=m&amp;ll=-37.814802,144.959965&amp;spn=0.047464,0.094414&amp;z=13&amp;source=embed" style="color:#0000FF;text-align:left">EasyCar Rental (Inner City) </a> in a larger map</small></p>
+
+                        </div>
+
+                        <h3>EasyCar Rental(Malvern)</h3>
+                        <div>
+                            <p><font color="#000000" size="2"><strong>EasyCar Rental Malvern Branch</strong><br/>
+                                Adddress: 14 Llaneast St Armadale VIC 3143, Australia<br/>
+                                Contact Number: 0389463834<br/><br/>
+                                <strong>EasyCar Rental Malvern East Branch</strong><br/>
+                                Address:  20 Clarence St Malvern East VIC 3145, Australia<br/>
+                                Contact Numbe: 0387463333
+                                </font></p>
+
+                            <p align="center"> <iframe width="550" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=209903562358090182916.0004cf96b9962f24fa178&amp;ie=UTF8&amp;t=m&amp;ll=-37.866655,145.034037&amp;spn=0.023715,0.047207&amp;z=14&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=209903562358090182916.0004cf96b9962f24fa178&amp;ie=UTF8&amp;t=m&amp;ll=-37.866655,145.034037&amp;spn=0.023715,0.047207&amp;z=14&amp;source=embed" style="color:#0000FF;text-align:left">EasyCar Rental (Malvern) </a> in a larger map</small></p>
+
+                        </div>
+
+                        <h3>EasyCar Rental (Caulfield)</h3>
+                        <div>
+                            <p><font color="#000000" size="2"><strong>EasyCar Rental Caulfield Branch</strong><br/>
+                                Adddress: 276 Hawthorn Rd Caulfield VIC 3162, Australia <br/>
+                                Contact Number: 0389477834<br/><br/>
+                                <strong>EasyCar Rental Caulfield South Branch</strong><br/>
+                                Address: 274 Bambra Rd Caulfield South VIC 3162, Australia <br/>
+                                Contact Numbe: 0387463783
+                                </font></p>
+
+                            <p align="center"><iframe width="550" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=209903562358090182916.0004cf96d1d8360c8298f&amp;ie=UTF8&amp;t=m&amp;ll=-37.889622,145.025368&amp;spn=0.023708,0.047207&amp;z=14&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=209903562358090182916.0004cf96d1d8360c8298f&amp;ie=UTF8&amp;t=m&amp;ll=-37.889622,145.025368&amp;spn=0.023708,0.047207&amp;z=14&amp;source=embed" style="color:#0000FF;text-align:left">EasyCar Rental (Caulfield )</a> in a larger map</small></p>
+
+                        </div>
+
+                        <h3>EasyCar Rental (Glen Huntly)</h3>
+                        <div>
+                            <p><font color="#000000" size="2"><strong>EasyCar Rental Glen Huntly Branch</strong><br/>
+                                Adddress: 26 El Nido Grove Carnegie VIC 3163, Australia <br/>
+                                Contact Number: 0389477234
+                                </font></p>
+                            <p align="center"><iframe width="550" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=209903562358090182916.0004cf96e1c6a848540cc&amp;ie=UTF8&amp;t=m&amp;ll=-37.891654,145.048285&amp;spn=0.002963,0.005901&amp;z=17&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=209903562358090182916.0004cf96e1c6a848540cc&amp;ie=UTF8&amp;t=m&amp;ll=-37.891654,145.048285&amp;spn=0.002963,0.005901&amp;z=17&amp;source=embed" style="color:#0000FF;text-align:left">EasyCar Rental (Glen Huntly) </a> in a larger map</small></p>
+                        </div>
+                    </div>
+
+                    <script>
+                        $( "#accordion" ).accordion();
+                        $( "#accordion" ).accordion({ collapsible: true });
+                        $(function() {
+                            $( "#Pick_date" ).datepicker();
+                            $( "#Drop_date" ).datepicker();
+                        });
+                    </script>
+                </div>
+                <div class="clear"></div>
+                <div id="footer" class="ui-corner-all">
+                    <span><a href="index.html">Home</a></span> | 
+                    <a href="vehicles.html">Vehicles</a> |
+                    <a href="location.html">Location</a> |
+                    <a href="help.html">Help/FAQs</a> |
+                    <a href="contact.html">Contact</a>
+
+
+                    <p>	Copyright &copy; 2012 created by EasyCar Rental Owned by EasyCar Rental </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
